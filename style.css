@@ -1,3 +1,5 @@
+/*ready for unprofessional comments???*/
+
 :root {
   --primary-color: #06b3bc;
   --text-color: #042d2f;
@@ -29,7 +31,7 @@ h1, h2 {
   text-align: center;
 }
 
-a {
+{
   text-decoration: none;
 }
 
@@ -90,8 +92,9 @@ main > section.hero {
 }
 
 section.hero > .call-to-action {
-  font-size: 2rem;
+  /*font-size: 2rem;
   font-weight: 700;
+  NOT TODAY SATAN!*/
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
   padding: 0 48px;
   margin: 0;
@@ -107,21 +110,21 @@ section.hero > button {
 }
 
 main article {
-  padding: 48px 96px;
+  padding: 0;
 }
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 48px;
 }
 
-main > article img {
+/*main > article img {
   float: left;
   width: 300px;
   height: auto;
   margin-right: 24px;
   margin-bottom: 6px;
-}
+}*/
 
 footer {
   margin-top: auto;
@@ -130,4 +133,59 @@ footer {
   text-transform: uppercase;
   padding: 24px 0;
   color: var(--off-white);
+}
+
+@media screen and (max-width: 500px){
+  header {
+  display: flex;
+  }
+
+/*Wanna talk about how the struggle is real?? 
+Here's the T
+IDK why my nav looks off-center. I've tried adding a .center class to the <home> & <contact> tags and that worked... kinda... then I read in the instructions "You do not need to change any of the existing CSS or HTML." So I errased it. 
+As a person who enjoys the spendors or visual symatry I am disgusted and appalled. I don't know how to fix it cuz I've tried several different things. I'm giving into my inner demons and giving up on it.
+Now for the img hero text, I said "NOT TODAY SATAN!" and blanked out the text in the original CSS code... gonna see how that goes.
+
+Ready for more things I struggle with??? WHY DOES JUSTIFY-CONTENT: CENTER; NEVER WORK!?!? W3 School is all like "use this simple code to center your content like a good little coder" and I'm like, "IN WHAT UNIVERSE???" What parallel universe do I live in where justify-content: center; works for everyone else but not for me. YOU LIE W3 SCHOOLS!!! the code is useless and does NOTHING! I'm sure an experienced coder can make it work in a few key strokes. My face will be plastered to the computer screen and I'll whisper, "what sorcery is this??"*/
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.logo{
+  padding-bottom: 10px;
+}
+
+section.hero > .call-to-action{
+  font-size: 20pt;
+  font-weight: 490;
+}
+
+main article {
+  padding: 15px;
+}
+
+main > article{
+  display: flex;  
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+section.hero {
+  margin-bottom: 10px;
+}
+
+main > article img {
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  margin-left: 30px;
+  margin-bottom: 6px;
+}
+
+
+/*I feel like I should see my therapist after this assignment...*/
+
 }
